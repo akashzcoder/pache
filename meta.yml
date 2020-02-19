@@ -1,0 +1,21 @@
+package:
+  name: pache
+  version: "0.0.1"
+
+source:
+  path: .
+
+build:
+  script:
+    - python setup.py install
+
+  run:
+    - python
+
+test:
+  imports:
+    - pache
+
+about:
+  home:
+  license: MIT
