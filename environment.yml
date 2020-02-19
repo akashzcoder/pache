@@ -3,3 +3,6 @@ channels:
   - conda-forge
   - anaconda-fusion
   - defaults
+dependencies:
+  - python=3.6
+  - pip=19.0.3
