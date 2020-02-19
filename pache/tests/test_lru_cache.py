@@ -1,19 +1,19 @@
 from pache import lru_cache
 
 
-def test_dq_node():
+def test_cache_item():
     key = "legend"
     value = "Vegeta"
-    expected_dq_node_str = f"{key} -> {value}"
-    dq_node = lru_cache.CacheItem(key=key, value=value)
-    assert str(dq_node) == expected_dq_node_str
+    expected_cache_item_str = f"{key} -> {value}"
+    cache_item = lru_cache.CacheItem(key=key, value=value)
+    assert str(cache_item) == expected_cache_item_str
 
 
-def test_dq_node_instance():
+def test_cache_item_instance():
     key = "legend"
     value = "Vegeta"
-    dq_node = lru_cache.CacheItem(key=key, value=value)
-    assert dq_node.key == key
-    assert dq_node.value == value
-    assert dq_node.next is None
-    assert dq_node.prev is None
+    cache_item = lru_cache.CacheItem(key=key, value=value)
+    assert cache_item.key == key
+    assert cache_item.value == value
+    assert cache_item.next is None
+    assert cache_item.prev is None

@@ -8,7 +8,7 @@ QNode -> holds key and value; as well as pointers to previous and next nodes.
 class CacheItem(object):
     def __init__(self, key: object, value: object):
         """
-        Initialize the Dequeue Node.
+        Initialize the CacheItem.
 
         :param key:
         :param value:
